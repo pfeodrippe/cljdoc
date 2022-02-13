@@ -84,8 +84,8 @@
             :extra-deps {lambdaisland/kaocha {:mvn/version "1.60.977"}
                          org.clojure/test.check {:mvn/version "1.1.1"}
                          pfeodrippe/pitoco {:git/url "https://github.com/pfeodrippe/pitoco.git"
-                                            :sha "2f84af697dd9518959e45a575f0d008e55735c8c"}}
-            :main-opts ["-m" "kaocha.runner"]}
+                                            :sha "b96d2830050f646b6340a075558f92f1695bb415"}}
+            #_ #_:main-opts ["-m" "kaocha.runner"]}
 
            :clj-kondo
            {:extra-deps {clj-kondo/clj-kondo {:mvn/version "2022.01.15"}}

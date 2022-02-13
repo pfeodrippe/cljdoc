@@ -105,7 +105,7 @@
  {"cljdoc.util.repositories/find-artifact-repository"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.219"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.496"}
     [:=> [:cat [:or string? symbol?] string?] [:maybe string?]]
     [:=> [:cat string?] string?]],
    :example
@@ -115,7 +115,7 @@
   "cljdoc.util/normalize-git-url"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.800"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.897"}
     [:=> [:cat string?] string?]],
    :example
    {:inputs-str ["\"git@github.com:clojure/clojure.git\"\n"],
@@ -124,14 +124,14 @@
   "cljdoc.config/profile"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.381"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.536"}
     [:=> [:cat] any?]],
    :example {:inputs-str [], :output-str "nil\n"},
    :arity->arglist {0 []}},
   "cljdoc.util.repositories/artifact-uris*"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.235"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.499"}
     [:=>
      [:cat string? symbol? string?]
      [:map [:jar string?] [:pom string?]]]],
@@ -146,14 +146,14 @@
   "cljdoc.util/assert-first"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.803"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.899"}
     [:=> [:cat [:sequential string?]] string?]],
    :example {:inputs-str ["(\"0.0.5\")\n"], :output-str "\"0.0.5\"\n"},
    :arity->arglist {1 [[x & rest :as xs]]}},
   "cljdoc.util.repositories/resolve-snapshot"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.361"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.529"}
     [:=> [:cat string? symbol? string?] string?]],
    :example
    {:inputs-str
@@ -165,7 +165,7 @@
   "cljdoc.util.repositories/pom-uri"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.249"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.502"}
     [:=> [:cat string? [:or string? symbol?] string?] string?]
     [:=> [:cat string? symbol? string? string?] string?]],
    :example
@@ -179,7 +179,7 @@
   "cljdoc.util.repositories/metadata-xml-uri"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.274"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.505"}
     [:=> [:cat string? symbol? string?] string?]
     [:=> [:cat string? [:or string? symbol?]] string?]],
    :example
@@ -194,7 +194,7 @@
   "cljdoc.util/replant-ns"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.797"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.895"}
     [:=> [:cat string? string?] string?]],
    :example
    {:inputs-str ["\"my.app.core\"\n" "\"routes\"\n"],
@@ -203,7 +203,7 @@
   "cljdoc.config/sentry-dsn"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.384"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.538"}
     [:=>
      [:cat
       [:map
@@ -256,7 +256,7 @@
   "cljdoc.util.repositories/exists?"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.344"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.524"}
     [:=> [:cat string? [:or string? symbol?] string?] boolean?]
     [:=> [:cat string? [:or string? symbol?]] boolean?]],
    :example
@@ -270,7 +270,7 @@
   "cljdoc.util.repositories/artifact-uri"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.182"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.492"}
     [:=>
      [:cat string? string? [:or string? symbol?] string? string?]
      string?]],
@@ -289,7 +289,7 @@
   "cljdoc.util/group-id"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.787"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.887"}
     [:=> [:cat [:or string? symbol?]] string?]],
    :example
    {:inputs-str ["\"org.clojure/clojure\"\n"],
@@ -298,14 +298,14 @@
   "cljdoc.util.repositories/snapshot-version?"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.337"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.522"}
     [:=> [:cat string?] boolean?]],
    :example {:inputs-str ["\"1.9.0\"\n"], :output-str "false\n"},
    :arity->arglist {1 [version]}},
   "cljdoc.util.repositories/jar-uri"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.324"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.517"}
     [:=> [:cat string? symbol? string? string?] string?]],
    :example
    {:inputs-str
@@ -319,14 +319,14 @@
   "cljdoc.util.datetime/day-suffix"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.371"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.532"}
     [:=> [:cat int?] string?]],
    :example {:inputs-str ["1\n"], :output-str "\"st\"\n"},
    :arity->arglist {1 [day]}},
   "cljdoc.config/config"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.446"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.564"}
     [:=>
      [:cat]
      [:map
@@ -377,7 +377,7 @@
   "cljdoc.util/read-cljdoc-edn"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.783"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.885"}
     [:=> [:cat any?] [:map [:or any?]]]],
    :example
    {:inputs-str
@@ -387,7 +387,7 @@
   "cljdoc.util/serialize-cljdoc-edn"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.806"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.900"}
     [:=> [:cat [:map [:or any?]]] string?]],
    :example
    {:inputs-str ["{:or #\"^Test*\"}\n"],
@@ -396,7 +396,7 @@
   "cljdoc.util.repositories/latest-release-version"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.212"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.495"}
     [:=> [:cat string?] string?]],
    :example
    {:inputs-str ["\"org/clojure/math.numeric-tower\"\n"],
@@ -405,7 +405,7 @@
   "cljdoc.util.repositories/version-directory-uri"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.308"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.513"}
     [:=> [:cat string? [:or string? symbol?] string?] string?]],
    :example
    {:inputs-str
@@ -418,7 +418,7 @@
   "cljdoc.config/maven-repositories"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.621"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.790"}
     [:=> [:cat] [:sequential [:map [:id string?] [:url string?]]]]],
    :example
    {:inputs-str [],
@@ -428,7 +428,7 @@
   "cljdoc.util.repositories/artifact-uris"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.331"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.519"}
     [:=> [:cat symbol? string?] [:map [:jar string?] [:pom string?]]]],
    :example
    {:inputs-str ["bidi\n" "\"2.0.9-SNAPSHOT\"\n"],
@@ -438,7 +438,7 @@
   "cljdoc.config/config-file"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.377"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.535"}
     [:=> [:cat] any?]],
    :example
    {:inputs-str [],
@@ -448,7 +448,7 @@
   "cljdoc.config/get-in"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.629"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.794"}
     [:=>
      [:cat
       [:map
@@ -504,7 +504,7 @@
   "cljdoc.util.repositories/group-path"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.294"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.510"}
     [:=> [:cat [:or string? symbol?]] string?]],
    :example
    {:inputs-str ["\"org.clojure/clojure\"\n"],
@@ -513,7 +513,7 @@
   "cljdoc.util/artifact-id"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.792"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.891"}
     [:=> [:cat [:or string? symbol?]] string?]],
    :example
    {:inputs-str ["\"org.clojure/clojure\"\n"],
@@ -522,7 +522,7 @@
   "cljdoc.util.datetime/->analytics-format"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.366"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.531"}
     [:=> [:cat :pitoco.core/IsoInstant] string?]],
    :example
    {:inputs-str ["\"2018-10-17T20:58:21.491730Z\"\n"],
@@ -531,7 +531,7 @@
   "cljdoc.util/relativize-path"
   {:malli/schema
    [:function
-    #:pitoco{:generated-at "2022-02-07T00:29:23.779"}
+    #:pitoco{:generated-at "2022-02-07T00:37:28.883"}
     [:=> [:cat string? string?] string?]],
    :example
    {:inputs-str ["\"doc/abc.html\"\n" "\"doc/xyz.html\"\n"],
