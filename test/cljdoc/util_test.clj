@@ -2,7 +2,8 @@
   (:require [cljdoc.util :as util]
             [cljdoc.util.repositories :as repositories]
             [cljdoc.util.datetime :as dt]
-            [clojure.test :as t])
+            [clojure.test :as t]
+            [pitoco.instrument :as piti])
   (:import (clojure.lang ExceptionInfo)
            (java.io StringReader)))
 
@@ -68,3 +69,16 @@
 
 (comment
   (t/run-tests))
+
+(comment
+
+  (-> (piti/find-vars {:ns-prefix "cljdoc"})
+      (piti/instrument! {:mode :instrument}))
+
+  (-> (piti/find-vars {:ns-prefix "cljdoc"})
+      piti/infer-schemas!)
+
+  (-> (piti/find-vars {:ns-prefix "cljdoc"})
+      piti/store-instrumented-vars!)
+
+  ())

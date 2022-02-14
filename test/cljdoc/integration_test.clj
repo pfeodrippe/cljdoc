@@ -13,7 +13,7 @@
 (defonce sys (atom nil))
 
 (defn run-system [tests]
-  (st/instrument)
+  #_(st/instrument)
   (let [dir "test-data/"
         cfg {:cljdoc/server {:port (+ 8000 (rand-int 1000))
                              :analysis-service :local

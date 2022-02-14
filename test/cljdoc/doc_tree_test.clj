@@ -7,7 +7,7 @@
             [clojure.spec.test.alpha :as st]
             [clojure.spec.alpha :as spec]))
 
-(t/use-fixtures :once (fn [f] (st/instrument) (f)))
+(t/use-fixtures :once (fn [f] #_(st/instrument) (f)))
 
 (t/deftest process-toc-test
   (t/is (=
